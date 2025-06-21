@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: peachpuff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: none;
+}
+    width: 80% 100%;
+    max-width: 800px;
+    min-width: 300px;
+    height: auto;
+    background-color: rgba(255, 228, 196, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid peachpuff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: slideInFromTop 0.8s ease-out forwards;
+}
+
+.links{
+    font-size: 20px;
+}
+
+a{
+    color: peachpuff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border: solid 2px peachpuff;
+    border-radius: 8px;
+    padding: 0.3px 0.5em;
+    margin: 0.3em 0;
+    display: inline-block;
+}
